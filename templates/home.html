@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+
+{% if user.is_authenticated %}
+    <h2>Hello {{user}}</h2>
+    <div class="inside-container">
+        <a href="api/notes">Go to api lists</a>
+
+    </div>
+{% else %}
+    <h2>You are not logged in</h2>
+    <div class="inside-container">
+        <a href="api-auth/login/?next=/api/notes/" >Log In</a>
+    </div>
+{% endif %}
+
+<div>
+    <h2>Links </h2>
+    <div class="inside-container">
+        <a href="{%url 'api:home'%}">API - Application Programming Interface</a>
+    </div>
+    <div class="inside-container">
+        <a href="{%url 'register'%}">User Register</a>
+    </div>
+    <div class="inside-container">
+        <a href="http://localhost:8000/api-auth/login/?next=/api/notes/">Login</a>
+    </div>
+    <div class="inside-container">
+        <a href="{%url 'token'%}">Token</a>
+    </div>
+    <div class="inside-container">
+        <a href="{%url 'token-refresh'%}">Token Refresh</a>
+    </div>
+    <div class="inside-container">
+        <a href="http://localhost:8000/admin/">Admin</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
