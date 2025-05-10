@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'note.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PWD"),
-        "HOST": os.environ.get("DB_HOST"),
-        "PORT": os.environ.get("DB_PORT"),
+        "NAME": "d7ue29s5p515fo",
+        "USER": "u5aodhtfr8eqe8",
+        "PASSWORD": "p50dd566a693f8d428acfc0fa8871b2a3ac0790689673604fab2bf1f86331cce4",
+        "HOST": "c952v5ogavqpah.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
