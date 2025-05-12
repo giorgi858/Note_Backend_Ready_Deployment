@@ -4,7 +4,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from api.views import CreateUserView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('site/main/url/', admin.site.urls),
     path('api/', include('api.urls')),
     path('api/user/register/',CreateUserView.as_view(), name='register'),
     path('api/token/',TokenObtainPairView.as_view(), name='token'),
