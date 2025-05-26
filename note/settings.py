@@ -18,7 +18,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DJANGO_DEBUG", default=False)
 
-ALLOWED_HOSTS = ["localhost",'secure-bayou-97683-67e3b4320596.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ["localhost",'https://sleepy-ridge-47471-b1a97be9fc1d.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
